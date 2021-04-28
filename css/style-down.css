@@ -1,0 +1,43 @@
+*{
+    font-family: 'Josefin Sans', sans-serif;
+}
+header{
+    text-align: center;
+    margin: 60px auto 30px auto;
+    font-size: 18pt;
+}
+h1{
+    font-family: 'Lobster', cursive;
+}
+#botao_baixar{
+    margin: 10px auto 20px auto;
+    color: white;
+    padding: 15px;
+    width: 260px;
+    border-radius: 10px;
+    border: solid 1px rgb(170, 170, 170);
+    font-size: 20pt;
+    background-color: rgb(13, 167, 13);
+    cursor: pointer;
+}
+section{
+    text-align: center;
+    padding: 30px;
+    width: 500px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: rgb(238, 238, 238);
+    box-shadow: 5px 5px 10px rgba(0,0,0,.2);
+}
+p{
+    margin: 20px;
+}
+footer{
+    text-align: center;
+}
+
+@media (max-width: 610px){
+    section{
+        width: 80%;
+    }
+}
