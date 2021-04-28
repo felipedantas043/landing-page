@@ -3,7 +3,8 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+
 }
 .grid{
     display: grid;
@@ -29,12 +30,18 @@ header{
 #lateral img{
     width: 300px;
 }
-#lateral h1, h2{
+#lateral h1{
+    color: rgb(255, 255, 255);
+    font-family: 'Lobster', cursive;
+    font-size: 40pt;
+    font-style: normal;
+}
+#lateral h2{
     color: white;
 }
 #lateral p{
     color: white;
-    margin: 10px auto 10px auto;
+    margin: 30px auto 10px auto;
     width: 300px
 }
 #conteudo{
@@ -48,7 +55,6 @@ header{
 }
 section{
     grid-area: section;
-
     width: 410px;
     padding: 30px;
     border-radius: 10px;
@@ -60,7 +66,7 @@ section{
 #formulario{
     text-align: left;
     width: 300px;
-    margin: 0 auto;
+    margin: 40px auto 0 auto;
 }
 #formulario h3{
     margin-bottom: 20px;
@@ -85,13 +91,78 @@ section input{
     height: auto;
 }
 #botao{
+    margin: 40px auto 40px auto;
     background-color: rgb(13, 167, 13);
     color: white;
     font-weight: 700;
     font-size: larger;
+    cursor: pointer;
 }
 footer{
     grid-area: footer;
     padding: 40px;
     text-align: center;
+}
+
+
+/*mobile*/
+
+@media(max-width: 1000px){
+    .grid{
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "header"
+        "conteudo"
+        "footer"
+        ;
+        text-align: center;
+    }
+    #conteudo{
+        grid-area: conteudo;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "lateral"
+            "section"
+        ;
+    }
+}
+@media (max-width: 670px){
+    #lateral h1{
+         font-size: 30pt;
+    }
+    
+}
+@media (max-width: 525px){
+    #formulario{
+        text-align: left;
+        width: 200px;
+        margin: 40px auto 0 auto;
+    }
+    section input{
+        width: 200px;
+        margin: 7px;
+        height: 30px;
+        border-radius: 10px;
+        border: solid 1px rgb(170, 170, 170);
+    }
+    #telefone{
+        width: 150px;
+    }
+    #notificacoes{
+        width: auto;
+        margin: 10px;
+        height: auto;
+    }
+    #botao{
+        margin: 40px auto 40px auto;
+        background-color: rgb(13, 167, 13);
+        color: white;
+        font-weight: 700;
+        font-size: larger;
+        cursor: pointer;
+    }
+    section{
+        width: 70%;
+    }
 }
