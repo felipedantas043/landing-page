@@ -139,11 +139,11 @@ footer{
 @media (max-width: 525px){
     #formulario{
         text-align: left;
-        width: 200px;
-        margin: 40px auto 0 auto;
+        width: 300px;
+        margin: 0 auto;
     }
     section input{
-        width: 200px;
+        width: 260px;
         margin: 7px;
         height: 30px;
         border-radius: 10px;
