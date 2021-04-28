@@ -27,10 +27,15 @@ header{
     text-align: center;
 }
 #lateral img{
-    width: 500px;
+    width: 300px;
 }
 #lateral h1, h2{
     color: white;
+}
+#lateral p{
+    color: white;
+    margin: 10px auto 10px auto;
+    width: 300px
 }
 #conteudo{
     grid-area: conteudo;
