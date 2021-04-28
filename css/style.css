@@ -134,9 +134,12 @@ footer{
     #lateral h1{
          font-size: 30pt;
     }
+    #formulario{
+        width: 350px;
+    }
     
 }
-@media (max-width: 525px){
+@media (max-width: 500px){
     #formulario{
         text-align: left;
         width: 300px;
@@ -159,6 +162,7 @@ footer{
     }
     #botao{
         margin: 40px auto 40px auto;
+        width: 260px;
         background-color: rgb(13, 167, 13);
         color: white;
         font-weight: 700;
@@ -166,6 +170,6 @@ footer{
         cursor: pointer;
     }
     section{
-        width: 70%;
+        width: 80%;
     }
 }
