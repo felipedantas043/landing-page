@@ -76,6 +76,7 @@ section{
     margin-bottom: 40px;
 }
 section input{
+    font-size: 14pt;
     width: 300px;
     margin: 7px;
     height: 30px;
@@ -92,10 +93,11 @@ section input{
 }
 #botao{
     margin: 40px auto 40px auto;
+    height: auto;
     background-color: rgb(13, 167, 13);
     color: white;
-    font-weight: 700;
-    font-size: larger;
+    font-size: 18pt;
+    padding: 30px;
     cursor: pointer;
 }
 footer{
