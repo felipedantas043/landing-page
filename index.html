@@ -31,16 +31,18 @@
             <div id="formulario">
                 <h3>Faça o download grátis aqui</h3>
                 <p>Preencha o formulário abaixo</p>
-                <form action="download.html" method="GET">
+                <form action="https://api.staticforms.xyz/submit" method="POST">
+                    <input type="hidden" name="accessKey" value="7952102c-bbed-497c-8679-c10c8bf614c3">
+
                     <label for="nome">Nome*</label><br>
-                    <input type="text" name="nome" id="nome" required><br>
+                    <input type="text" name="name" id="nome" required><br>
                     <label for="email">Email*</label><br>
                     <input type="email" name="email" id="email" required><br>
                     <label for="telefone">Telefone</label><br>
-                    <input type="number" name="telefone" id="telefone" maxlength="11" placeholder=" (99) 9999-9999" ><br>
+                    <input type="number" name="phone" id="telefone" maxlength="11" placeholder=" (99) 9999-9999" ><br>
                     <input type="checkbox" name="notificacoes" id="notificacoes" >
                     <label for="notificacoes">Aceito receber notificações</label><br>
-                    <input type="submit" id="botao" value="Baixar pdf" onclick="validar_dados()">
+                    <input type="submit" id="botao" value="Baixar pdf" onclick="redirect()">
                 </form>
             </div>
         </section>
@@ -53,6 +55,10 @@
     </div>  
 
 
-    <script src="script.js"></script>
+    <script>
+        function redirect() {
+            window.location.href = 'https://felipedantas043.github.io/landing-page/download.html'
+        }
+    </script>
 </body>
 </html>
