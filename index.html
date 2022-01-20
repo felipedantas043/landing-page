@@ -21,9 +21,9 @@
 
         <div id="lateral">
             
-            <h1>Como resolver o cubo mágico</h1>
-            <h2>Baixe o pdf do método de camadas</h2>
-            <p>Aprenda a resolver o cubo mágico de jeito simples pelo método de camadas</p>
+            <h1>Apostila método avançado Fridrich</h1>
+            <h2>Baixe o pdf do método avançado</h2>
+            <p style="font-size: 18pt;">Chega de ficar horas procurando em vários sites a melhor didática para se aprender a montar o cubo mais rápido. Aqui, disponibilizo uma apostila totalmente grátis, organizada e fácil de entender. Contendo 119 casos divididos em 3 partes: F2L, OLL e PLL.</p>
             <img src="img/cubo.jpg" alt="cubo mágico">
             
             </div>
@@ -31,18 +31,16 @@
             <div id="formulario">
                 <h3>Faça o download grátis aqui</h3>
                 <p>Preencha o formulário abaixo</p>
-                <form action="https://api.staticforms.xyz/submit" method="POST">
-                    <input type="hidden" name="accessKey" value="7952102c-bbed-497c-8679-c10c8bf614c3">
-                    <input type="hidden" name="redirectTo" value="https://felipedantas043.github.io/landing-page/download.html">
+                <form action="download.php" method="POST">
                     <label for="nome">Nome*</label><br>
                     <input type="text" name="name" id="nome" required><br>
                     <label for="email">Email*</label><br>
                     <input type="email" name="email" id="email" required><br>
                     <label for="telefone">Telefone</label><br>
-                    <input type="number" name="phone" id="telefone" maxlength="11" placeholder=" (99) 9999-9999" ><br>
+                    <input type="number" name="phone" id="telefone" maxlength="11" placeholder=" (99) 9999-9999" required><br>
                     <input type="checkbox" name="notificacoes" id="notificacoes" >
                     <label for="notificacoes">Aceito receber notificações</label><br>
-                    <input type="submit" id="botao" value="Baixar pdf" onclick="redirect()">
+                    <input type="submit" id="botao" value="Baixar pdf" onclick="loading()">
                 </form>
             </div>
         </section>
@@ -51,6 +49,10 @@
         <footer>
             <p>&copy;FelipeDantas</p>
         </footer>
-
+        <script>
+            function loading() {
+                document.getElementById("botao").innerHTML = "AGUARDE..."
+            }
+        </script>
     </div>  
 </html>
