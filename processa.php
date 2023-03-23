@@ -24,11 +24,11 @@
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'suportesites113@gmail.com';
-            $mail->Password = 'contasuporte043';
+            $mail->Username = 'email_remetente';
+            $mail->Password = 'password_email_remetente';
             $mail->Port = 587;
 
-            $mail->setFrom("suportesites113@gmail.com");
+            $mail->setFrom("email_remetente");
             $mail->addAddress($email);
 
 
